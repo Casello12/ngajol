@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.setting.SettingFragment">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/arrow_login"
+        android:layout_height="@dimen/arrow_login"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="@dimen/size_nav"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/marginComponent"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        app:layout_constraintStart_toStartOf="@id/btn_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile"
+        app:layout_constraintStart_toStartOf="@id/btn_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_about"
+        app:layout_constraintStart_toStartOf="@id/btn_back"
+        />
+
+    
+    <ImageView
+        android:id="@+id/arrow_profile"
+        android:layout_width="@dimen/arrow_home"
+        android:layout_height="@dimen/arrow_home"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:contentDescription="@string/hint_profile"
+        android:layout_marginEnd="@dimen/marginComponent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_profile"
+        app:layout_constraintBottom_toBottomOf="@id/tv_profile"
+        />
+
+    <ImageView
+        android:id="@+id/arrow_about"
+        android:layout_width="@dimen/arrow_home"
+        android:layout_height="@dimen/arrow_home"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:contentDescription="@string/hint_profile"
+        android:layout_marginEnd="@dimen/marginComponent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_about"
+        app:layout_constraintBottom_toBottomOf="@id/tv_about"
+        />
+    <ImageView
+        android:id="@+id/arrow_logout"
+        android:layout_width="@dimen/arrow_home"
+        android:layout_height="@dimen/arrow_home"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:contentDescription="@string/hint_profile"
+        android:layout_marginEnd="@dimen/marginComponent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_logout"
+        app:layout_constraintBottom_toBottomOf="@id/tv_logout"
+        />
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

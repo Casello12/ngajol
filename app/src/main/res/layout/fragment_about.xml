@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.about.AboutFragment">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/arrow_login"
+        android:layout_height="@dimen/arrow_login"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="@dimen/size_nav"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/marginComponent"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_about"
+        android:layout_marginTop="48dp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginStart="@dimen/marginComponent"
+        android:layout_marginEnd="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_visi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_visi"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/marginComponent"
+        android:layout_marginEnd="@dimen/marginComponent"
+        android:lineSpacingExtra="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="o" />
+
+
+
+    <TextView
+        android:id="@+id/tv_thank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_thanks"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/marginComponent"
+        android:layout_marginEnd="@dimen/marginComponent"
+        android:lineSpacingExtra="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_visi"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="o" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

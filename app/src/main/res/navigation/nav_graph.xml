@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginAsFragment">
+
+    <fragment
+        android:id="@+id/loginAsFragment"
+        android:name="com.example.ngajol.ui.loginas.LoginAsFragment"
+        android:label="fragment_login_as"
+        tools:layout="@layout/fragment_login_as" >
+        <action
+            android:id="@+id/action_loginAsFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ngajol.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_jadwalSholatFragment"
+            app:destination="@id/jadwalSholatFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_jadwalNgajiFragment"
+            app:destination="@id/jadwalNgajiFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_qiblatFragment"
+            app:destination="@id/qiblatFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.ngajol.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_loginFragment2_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="status"
+            app:argType="com.example.ngajol.model.local.Status" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.ngajol.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="status"
+            app:argType="com.example.ngajol.model.local.Status" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNgajiFragment"
+        android:name="com.example.ngajol.ui.createNgaji.CreateNgajiFragment"
+        android:label="fragment_create_ngaji"
+        tools:layout="@layout/fragment_create_ngaji" >
+        <action
+            android:id="@+id/action_createNgajiFragment_to_jadwalSholatFragment"
+            app:destination="@id/jadwalSholatFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.ngajol.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailNgajiFragment"
+        android:name="com.example.ngajol.ui.detailNgaji.DetailNgajiFragment"
+        android:label="fragment_detail_ngaji"
+        tools:layout="@layout/fragment_detail_ngaji" >
+        <action
+            android:id="@+id/action_detailNgajiFragment_to_editNgajiFragment"
+            app:destination="@id/editNgajiFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/jadwalSholatFragment"
+        android:name="com.example.ngajol.ui.jadwalSholat.JadwalSholatFragment"
+        android:label="fragment_jadwal_sholat"
+        tools:layout="@layout/fragment_jadwal_sholat" />
+    <fragment
+        android:id="@+id/jadwalNgajiFragment"
+        android:name="com.example.ngajol.ui.jadwalNgaji.JadwalNgajiFragment"
+        android:label="fragment_jadwal_ngaji_sholat"
+        tools:layout="@layout/fragment_jadwal_ngaji_sholat" >
+        <action
+            android:id="@+id/action_jadwalNgajiFragment_to_detailNgajiFragment"
+            app:destination="@id/detailNgajiFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_jadwalNgajiFragment_to_createNgajiFragment"
+            app:destination="@id/createNgajiFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/qiblatFragment"
+        android:name="com.example.ngajol.ui.qiblat.QiblatFragment"
+        android:label="fragment_qiblat"
+        tools:layout="@layout/fragment_qiblat" />
+    <fragment
+        android:id="@+id/editNgajiFragment"
+        android:name="com.example.ngajol.ui.editNgaji.EditNgajiFragment"
+        android:label="fragment_edit_ngaji"
+        tools:layout="@layout/fragment_edit_ngaji" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ngajol.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ngajol.ui.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

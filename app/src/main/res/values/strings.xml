@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Ngajol</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guru_ngaji">Guru Ngaji</string>
+    <string name="loginAsGuru">Login sebagai Guru</string>
+    <string name="loginAs">Login Sebagai :</string>
+    <string name="login_sebagai_murid">Login sebagai Murid</string>
+    <string name="murid">Murid</string>
+    <string name="login_first">Silahkan login terlebih dahulu</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="belum_punya_akun"><u>Belum punya akun ?</u></string>
+    <string name="register">Buat Akun</string>
+    <string name="regist_first">Silahkan buat akun</string>
+    <string name="nama">Nama</string>
+    <string name="have_account"><u>Sudah punya akun ?</u></string>
+    <string name="welcome">Welcome</string>
+    <string name="settings">Setting</string>
+    <string name="alquran">Alquran</string>
+    <string name="jadwal_ngaji">Jadwal Ngaji</string>
+    <string name="jadwal_sholat">Jadwal Sholat</string>
+    <string name="back_btn">Tombol kembali</string>
+    <string name="tambah_jadwal">Tambah Jadwal</string>
+    <string name="tipe">Tipe</string>
+    <string name="time">Time</string>
+    <string name="link_gmeet">Link Gmeet</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="add">Tambah</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="detail_ngaji">Detail Ngaji</string>
+    <string name="daftar_murid">Daftar Murid</string>
+    <string name="ustad">Ustad</string>
+    <string name="jam">Jam</string>
+    <string name="kuota">Kuota</string>
+    <string name="profile">Profile</string>
+    <string name="about">Tentang NGAJOL</string>
+    <string name="log_out">Log-Out</string>
+    <string name="hint_profile">Navigasi profile</string>
+    <string name="hint_back">Tombol Kembali</string>
+    <string name="name">Name</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="save">Save Changes</string>
+    <string name="jadwal_mendatang">Jadwal Mendatang</string>
+    <string name="aksi">Aksi</string>
+    <string name="btn_back">Tombol kembali</string>
+    <string name="btn_add">Tambah</string>
+    <string name="edit_jadwal">Edit Jadwal</string>
+    <string name="hapus_jadwal">Hapus Jadwal</string>
+    <string name="save_changes">Simpah Perubahan</string>
+    <string name="dummy_date">17 Desember 2023</string>
+    <string name="menuju_waktu_maghrib">Menuju Waktu Maghrib</string>
+    <string name="menit">Menit</string>
+    <string name="detik">Detik</string>
+    <string name="ashar">Ashar</string>
+    <string name="time_ashar">15:18</string>
+    <string name="time_dzuhur">11:51</string>
+    <string name="dzuhur">Dzuhur</string>
+    <string name="time_subuh">04:11</string>
+    <string name="subuh">Subuh</string>
+    <string name="zero">00</string>
+    <string name="dot">:</string>
+    <string name="dummy">28</string>
+    <string name="text_about">NGAJOL (Ngaji Online) adalah aplikasi inovatif yang dirancang untuk memudahkan proses pembelajaran Al-Qur\'an secara online. Aplikasi ini menyediakan berbagai fitur untuk membantu pengguna dari berbagai kalangan, mulai dari pemula hingga yang sudah mahir, dalam belajar dan memahami Al-Qur\'an dengan lebih baik.</string>
+    <string name="text_visi">Visi : \nVisi kami adalah untuk memudahkan akses pembelajaran Al-Qur\'an bagi semua orang, di mana pun mereka berada. Dengan adanya aplikasi ini kami berharap dapat mempermudah semua orang yang ingin belajar dan memperdalam pemahaman tentang Al-Qur’an.</string>
+    <string name="text_thanks">Terima kasih telah menggunakan NGAJOL (Ngaji Online)! Kami berharap aplikasi ini dapat memberikan manfaat yang besar bagi Anda.</string>
+    <string name="mulai">Mulai</string>
+    <string name="end">Selesai</string>
+
+    <string-array name="sp_tipe">
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+</resources>
