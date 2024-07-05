@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iv_quran">240dp</dimen>
+    <dimen name="padd_quran">64dp</dimen>
+    <dimen name="arrow_home">30dp</dimen>
+    <dimen name="arrow_login">48dp</dimen>
+    <dimen name="card_iv">50dp</dimen>
+    <dimen name="marginComponent">16dp</dimen>
+    <dimen name="text_card_home">24sp</dimen>
+    <dimen name="table_row">16sp</dimen>
+    <dimen name="padding_row">10dp</dimen>
+    <dimen name="padding_column">32dp</dimen>
+    <dimen name="margin_top">32dp</dimen>
+    <dimen name="size_nav">24sp</dimen>
+    <dimen name="margin_profile">32dp</dimen>
+    <dimen name="btn_add">32dp</dimen>
+
+</resources>

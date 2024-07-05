@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.editNgaji.EditNgajiFragment">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/arrow_login"
+        android:layout_height="@dimen/arrow_login"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        android:contentDescription="@string/back_btn"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/edit_jadwal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_btn"
+        app:layout_constraintBottom_toBottomOf="@id/back_btn"
+        />
+
+    <TextView
+        android:id="@+id/tv_tipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/tipe"
+        app:layout_constraintTop_toBottomOf="@id/back_btn"
+        app:layout_constraintStart_toStartOf="@id/back_btn"
+        android:layout_marginTop="48dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sp_tipe"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginComponent"
+        android:entries="@array/sp_tipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tipe">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:hint="@string/tipe"
+            android:padding="@dimen/marginComponent"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kuota_layout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_tipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_kuota"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/marginComponent"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/marginComponent"
+            android:hint="@string/jumlah"
+            android:drawableStart="@drawable/baseline_person_24"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tipe"
+        app:layout_constraintTop_toBottomOf="@+id/kuota_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/marginComponent"
+            android:drawablePadding="@dimen/marginComponent"
+            android:textColor="@color/black"
+            android:hint="@string/tanggal"
+            android:drawableStart="@drawable/outline_calendar_clock_24"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_gmeet"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tipe"
+        app:layout_constraintTop_toBottomOf="@id/time_layout"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginComponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/marginComponent"
+            android:drawablePadding="@dimen/marginComponent"
+            android:hint="@string/link_gmeet"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/baseline_meeting_room_24"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/link_layout"
+        android:layout_margin="@dimen/marginComponent"
+        >
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/marginComponent"
+            android:layout_marginEnd="@dimen/marginComponent"
+            android:text="@string/save_changes"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:textColor="@color/red"
+            android:layout_marginEnd="@dimen/marginComponent"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:text="@string/hapus_jadwal"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
